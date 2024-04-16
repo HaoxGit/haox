@@ -42,7 +42,7 @@ Rejetto HttpFileServer 2.3.x - Remote Command Execution (3)       | windows/weba
 Shellcodes: No Results
 ```
 
-<p></p>
+<br>
 **Shell de Usuario**
 
 Adicionalmente podemos realizar una busqueda en google tal como "HttpFileServer exploit" y nos apareceran otros tantos como por ejemplo <a href="https://www.exploit-db.com/exploits/49584">CVE-2014-6287</a>
@@ -71,5 +71,5 @@ PS C:\Users\kostas\Desktop> whoami
 optimum\kostas
 ```
 
-
+<br>
 **Shell de Usuario**
