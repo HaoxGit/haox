@@ -34,10 +34,22 @@ Hemos utilizado searchsploit para detectar vulnerabilidades relacionadas con la 
 ```
 ┌──(kali㉿kali)-[~/htb/optimum]
 └─$ searchsploit httpfileserver
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+----------------------------------------------------------------- ---------------------------------
  Exploit Title                                                                                                                                                                                            |  Path
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
-Rejetto HttpFileServer 2.3.x - Remote Command Execution (3)                                                                                                                                               | windows/webapps/49125.py
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+----------------------------------------------------------------- ---------------------------------
+Rejetto HttpFileServer 2.3.x - Remote Command Execution (3)       | windows/webapps/49125.py
+----------------------------------------------------------------- ---------------------------------
 Shellcodes: No Results
+```
+
+**Shell de Usuario**
+
+Adicionalmente podemos realizar una busqueda en google tal como "HttpFileServer exploit" y nos apareceran otros tantos como por ejemplo https://www.exploit-db.com/exploits/49584
+
+Para poder ejecutar el script debemos de modificar el valor lhost y lport por nuestra IP local y el puerto a la escucha que vamos a usar para recibir la shell. Los valores rhost y rport corresponderan a la máquina víctima, en este caso:
+```
+lhost = "10.10.14.121"
+lport = 4444
+rhost = "10.10.10.8"
+rport = 80
 ```
