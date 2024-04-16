@@ -3,7 +3,7 @@ title:  "Optimum - Hack The Box"
 classes: wide
 ---
 
-![styled-image](https://haoxgit.github.io/haox/assets/images/Optimum.png){: .align-center style="width: 50%;"}
+![styled-image](https://haoxgit.github.io/haox/assets/images/optimum/Optimum.png){: .align-center style="width: 50%;"}
 
 Optimum es una máquina sencilla basada en vulnerar una versión obsoleta de Windows. Para obtener la shell inicial hemos vulnerado la versión 2.3 de HTTP File Server. Desde aqui hemos ejecutado herramientas automatizadas adaptandonos al enotno del sistema operativo y buscando soluciones para poder escalar privilegios en esta versión concreta.
 
@@ -24,4 +24,6 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 131.59 seconds
 ```
 
+**Web**
+![image-left](https://haoxgit.github.io/haox/assets/images/optimum/web.png){: .align-left}
 
