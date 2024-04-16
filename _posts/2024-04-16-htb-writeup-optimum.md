@@ -25,6 +25,8 @@ Nmap done: 1 IP address (1 host up) scanned in 131.59 seconds
 ```
 
 **Web**
+
 Accediendo al sitio web confirmamos la presencia del servicio HTTPFileServer que habíamos visto en el escaneo nmap.
+
 ![image-left](https://haoxgit.github.io/haox/assets/images/optimum/web.png){: .align-center}
 
