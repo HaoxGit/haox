@@ -24,6 +24,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 131.59 seconds
 ```
 
+<br>
 **Web**
 
 Accediendo al sitio web confirmamos la presencia del servicio HTTPFileServer que habíamos visto en el escaneo nmap.
@@ -72,4 +73,4 @@ optimum\kostas
 ```
 
 <br>
-**Shell de Usuario**
+**Escalada de privilegios**
