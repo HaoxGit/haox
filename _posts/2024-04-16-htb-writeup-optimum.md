@@ -30,3 +30,14 @@ Accediendo al sitio web confirmamos la presencia del servicio HTTPFileServer que
 
 ![image-left](https://haoxgit.github.io/haox/assets/images/optimum/web.png){: .align-center}
 
+Hemos utilizado searchsploit para detectar vulnerabilidades relacionadas con la versión actual.
+```
+┌──(kali㉿kali)-[~/htb/optimum]
+└─$ searchsploit httpfileserver
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+ Exploit Title                                                                                                                                                                                            |  Path
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+Rejetto HttpFileServer 2.3.x - Remote Command Execution (3)                                                                                                                                               | windows/webapps/49125.py
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+Shellcodes: No Results
+```
