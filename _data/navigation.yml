@@ -1,7 +1,11 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Inicio"
+    url: http://10.20.0.100:4000/
+  - title: "OSCP"
+    url: http://10.20.0.100:4000/
+  - title: "Seguridad Personal"
+    url: http://10.20.0.100:4000/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
