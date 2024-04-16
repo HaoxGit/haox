@@ -1,11 +1,11 @@
 # main links
 main:
   - title: "Inicio"
-    url: http://10.20.0.100:4000/
+    url: https://haoxgit.github.io/haox/
   - title: "OSCP"
-    url: http://10.20.0.100:4000/
+    url: https://haoxgit.github.io/haox/
   - title: "Seguridad Personal"
-    url: http://10.20.0.100:4000/
+    url: https://haoxgit.github.io/haox/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
