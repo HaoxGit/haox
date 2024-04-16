@@ -44,7 +44,7 @@ Shellcodes: No Results
 
 **Shell de Usuario**
 
-Adicionalmente podemos realizar una busqueda en google tal como "HttpFileServer exploit" y nos apareceran otros tantos como por ejemplo https://www.exploit-db.com/exploits/49584
+Adicionalmente podemos realizar una busqueda en google tal como "HttpFileServer exploit" y nos apareceran otros tantos como por ejemplo <a href="https://www.exploit-db.com/exploits/49584">CVE-2014-6287</a>
 
 Para poder ejecutar el script debemos de modificar el valor lhost y lport por nuestra IP local y el puerto a la escucha que vamos a usar para recibir la shell. Los valores rhost y rport corresponderan a la máquina víctima, en este caso:
 ```
