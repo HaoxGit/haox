@@ -2,7 +2,6 @@
 title:  "Optimum - Hack The Box"
 classes: wide
 excerpt: '<img src="https://haoxgit.github.io/haox/assets/images/optimum/Optimum.png" alt="" style="float: right;margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px;">Optimum es una máquina sencilla basada en vulnerar una versión obsoleta de Windows. Para obtener la shell inicial hemos vulnerado la versión 2.3 de HTTP File Server. Desde aqui hemos ejecutado herramientas automatizadas adaptandonos al enotno del sistema operativo y buscando soluciones para poder escalar privilegios en esta versión concreta.'
-
 ---
 
 ![styled-image](https://haoxgit.github.io/haox/assets/images/optimum/Optimum.png){: .align-center style="width: 75%;"}
