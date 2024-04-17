@@ -282,9 +282,9 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: grid
+      type: posts
     values:
-      layout: archive #single
+      layout: grid #single
       author_profile: true
       show_date: true
       read_time: #true
