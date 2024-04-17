@@ -27,7 +27,7 @@
     {% include page__meta.html type=include.type %}
     {% if include.type == "list" and teaser %}
      <div class="archive__item-teaser">
-       <img src="{{ teaser | relative_url }}" alt="" style="float: right;margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px;">
+       <img src="{{ teaser | relative_url }}" alt="" style="display: block; margin-right:auto; margin-left:auto; margin-bottom:10px; width:70%;">
      </div>
     {% endif %} 
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
