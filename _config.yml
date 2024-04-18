@@ -296,3 +296,13 @@ defaults:
       comments: # true
       share: true
       related: true
+
+defaults:
+  # _portfolio
+  - scope:
+      path: ""
+      type: oscp
+    values:
+      layout: single
+      author_profile: false
+      share: true
