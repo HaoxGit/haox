@@ -301,7 +301,7 @@ defaults:
       path: ""
       type: oscp
     values:
-      layout: single
+      layout: archive
       author_profile: true
       share: true
       comment: true
