@@ -281,6 +281,20 @@ collections:
     output: true
     permalink: /:collection/:path/
 
+# Defaults
+defaults:
+  # _oscp
+  - scope:
+      path: ""
+      type: oscp
+    values:
+      layout: archive #single
+      author_profile: true
+      show_date: true
+      read_time: #true
+      comments: # true
+      share: true
+      related: true
 
 # Defaults
 defaults:
@@ -296,13 +310,3 @@ defaults:
       comments: # true
       share: true
       related: true
-
-defaults:
-  # _portfolio
-  - scope:
-      path: ""
-      type: oscp
-    values:
-      layout: single
-      author_profile: false
-      share: true
