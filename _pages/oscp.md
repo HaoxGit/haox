@@ -3,7 +3,6 @@ title: OSCP
 layout: collection
 permalink: /oscp/
 collection: oscp
-classes: wide
 author_profile: true
 ---
 
