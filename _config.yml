@@ -277,16 +277,16 @@ compress_html:
     envs: development
 
 collections:
-  portfolio:
+  oscp:
     output: true
     permalink: /:collection/:path/
 
 # Defaults
 defaults:
-  # _oscp
+  # _posts
   - scope:
       path: ""
-      type: oscp
+      type: posts
     values:
       layout: archive #single
       author_profile: true
@@ -295,13 +295,10 @@ defaults:
       comments: # true
       share: true
       related: true
-
-# Defaults
-defaults:
-  # _posts
+  # _oscp
   - scope:
       path: ""
-      type: posts
+      type: oscp
     values:
       layout: archive #single
       author_profile: true
