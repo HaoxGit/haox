@@ -6,4 +6,4 @@ collection: oscp
 author_profile: true
 ---
 
-Este listado incluye máquinas de HTB que pueden ser de gran ayuda si vas a hacer el OSCP.
+Este listado incluye una recopilación de máquinas que considero de gran ayuda para realizar el OSCP.
