@@ -301,7 +301,10 @@ defaults:
       path: ""
       type: oscp
     values:
-      layout: archive
+      layout: archive #single
       author_profile: true
+      show_date: true
+      read_time: #true
+      comments: # true
       share: true
-      comment: true
+      related: true
