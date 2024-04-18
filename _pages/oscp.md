@@ -3,7 +3,6 @@ title: OSCP
 layout: collection
 permalink: /oscp/
 collection: oscp
-entries_layout: archive
 classes: wide
 ---
 
