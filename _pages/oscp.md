@@ -1,7 +1,8 @@
 ---
 title: OSCP
-layout: archive
+layout: collection
 permalink: /oscp/
+collection: oscp
 classes: wide
 author_profile: true
 ---
