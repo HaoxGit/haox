@@ -7,4 +7,4 @@ entries_layout: grid
 classes: wide
 ---
 
-Sample document listing for the collection `_oscp`.
+Este listado incluye máquinas de HTB que pueden ser de gran ayuda si vas a hacer el OSCP.
