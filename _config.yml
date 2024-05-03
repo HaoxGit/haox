@@ -108,7 +108,7 @@ author:
   avatar           : "/assets/images/ubuntu-avatar.png"
   bio              : "Ciberseguridad Ofensiva. Tips para aprobar el OSCP y para mejorar la seguridad y privacidad personal"
   location         : "Spain"
-  email            : "test@gmail.com"
+  email            : "haox@haox.me"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
